@@ -51,6 +51,17 @@ const aud = new Audio()
 aud.src = 'audio.webm'
 aud.load()
 
+const audPicker = document.getElementById('audio-picker')
+const audInput = document.getElementById('audio-input')
+
+audPicker.onclick = () => audInput.click()
+audInput.onchange = e => {
+  const [file] = e.target.files
+  if (file) aud.src = URL.createObjectURL(file)
+  aud.load()
+  aud.play()
+}
+
 const audCtx = new AudioContext()
 const audAzr = audCtx.createAnalyser()
 const audSrc = audCtx.createMediaElementSource(aud)

@@ -1,0 +1,32 @@
+{
+  "name": "livelyforms",
+  "version": "1.0.0",
+  "description": "Amazing Shapes with Audio visualizing effects with Web Audio API.",
+  "main": "script.js",
+  "scripts": {
+    "dev-build": "gulp build",
+    "dev-watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kundanb/livelyforms.git"
+  },
+  "author": {
+    "name": "Kundan Bhasin",
+    "email": "iamkundanb@gmail.com",
+    "url": "https://github.com/kundanb"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kundanb/livelyforms/issues"
+  },
+  "homepage": "https://github.com/kundanb/livelyforms#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

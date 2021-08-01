@@ -227,11 +227,11 @@ function Particle(medIdx) {
   }
 
   this.update = () => {
-    const beat = audDatMod[this.medIdx] * audDatAvg * 5
+    const beat = audDatMod[this.medIdx] * audDatAvg * 3
 
-    this.s = beat * 1.5 + 1
+    this.s = beat * 0.5 + 1
     this.t += Deg / 4
-    this.r = beat * 9 + 1
+    this.r = beat * 4 + 1
 
     const { xy: eqXY, s: eqS } = activeEqGrp
     const target = eqXY(this.eq(this.t), this.t, eqS * this.s)
